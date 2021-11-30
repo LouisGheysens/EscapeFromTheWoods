@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+dG0kLXa01Q/JtWnka2fKGitj750I54l5es1ziwgqYh2ZUQjY2kx3PV7jc2zSRcXlN4bT1jA6rE7QFjzBKi7Yg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Eigenaar\\Documents\\EscapeFromTheWoods\\BusinessLayer\\BusinessLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eigenaar\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Eigenaar\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
