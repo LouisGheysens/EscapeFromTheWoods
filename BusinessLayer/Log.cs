@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessLayer.Models;
+using DataLayer.Models;
 
 namespace BusinessLayer {
     public class Log {
 
-        public string pathtomypersonaldisk = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\EscapeFromTheWoods";
+        public string pathtomypersonaldisk = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic) + @"\EscapeFromTheWoods";
         public List<Task> TaskList = new List<Task>();
         private int s = 2;
         private int th = 20;

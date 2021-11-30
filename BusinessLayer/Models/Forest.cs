@@ -40,7 +40,25 @@ namespace BusinessLayer.Models {
             "Henri",
             "Jeroen",
             "Milan",
-            "Yorge"
+            "Yorge",
+            "Petra",
+            "Rufus",
+            "Jens",
+            "Maarten",
+            "Guani",
+            "Bryan",
+            "Aaron",
+            "Jeffe",
+            "Frietsel",
+            "Okan",
+            "Patrick",
+            "Ozgun",
+            "Maxine",
+            "Yahya",
+            "Carti",
+            "Jhonson",
+            "Moderna",
+            "Astrazeneca"
         };
 
         private void GenerateTrees(int trees) {
@@ -59,7 +77,7 @@ namespace BusinessLayer.Models {
                 else
                     i--;
             }
-                Console.WriteLine($"{id}: Generated forest with {Trees.Count} amount of trees with Id: {tree.Id}");
+                Console.WriteLine($"{id}: Generated forest with {Trees.Count} amount of trees with Id: {id}");
                 LogController.Log.CreateBitMap(this);
         }
 
@@ -68,7 +86,7 @@ namespace BusinessLayer.Models {
             Random rnd = new Random();
             if(id % 2 == 0)
                 NameList.Reverse();
-                for (int i = 0; i < monkeys + 1; i++) {
+                for (int i = 1; i < monkeys + 1; i++) {
                     int random = rnd.Next(Trees.Count - 1);
                     Monkey monkeyOne = new Monkey(MonkeyCounter++, NameList[i]);
                     if (this.Trees[random].Monkey != null) {

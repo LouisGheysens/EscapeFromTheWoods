@@ -28,7 +28,7 @@ namespace BusinessLayer.Models {
 
                     Console.WriteLine($"{Id}: Monkey: {Naam} jumped out the forest!");
                     LogController.Log.TaskList.Add(Task.Run(() => LogController.Log.ActionLog(f.id, this.Id, $"{f.id}: Monkey: {Naam} jumped out of the forest")));
-                    f.TextLogs($"{f.id}: Monkey: {Naam} jumped out of the forest");
+                    f.Logs.Add($"{f.id}: Monkey: {Naam} jumped out of the forest");
                 }
                 else {
                     Tree trel = passedTrees[Hops];
@@ -36,8 +36,8 @@ namespace BusinessLayer.Models {
                     passedTrees.Add(Hops, tree);
 
                     Console.WriteLine($"{f.id}: Monkey: {Naam} jumps from {trel.Id} to {tree.Id} at {tree.X}, {tree.Y}");
-                    LogController.Log.TaskList.Add(Task.Run(() => LogController.Log.ActionLog(f.id, this.Id, $"{f.id}: Monkey: {Naam} jumps from {trel.Id} to {tree.Id} at {tree.X}, {tree.Y}"));
-                    LogController.Log.TaskList.Add(Task.Run(() => LogController.Log.MonkeyLog(f, this, tree)));
+                    LogController.Log.TaskList.Add(Task.Run(() => LogController.Log.ActionLog(f.id, this.Id, $"{f.id}: Monkey: {Naam} jumps from {trel.Id} to {tree.Id} at {tree.X}, {tree.Y}")));
+                    LogController.Log.TaskList.Add(Task.Run(() => LogController.Log.WriteMonkeyLog(f, this, tree)));
                     f.Logs.Add($"{f.id}:  Monkey: {Naam} jumps from {trel.Id} to {tree.Id} at {tree.X}, {tree.Y}");
                     LogController.Log.LetMonkeyJumpInTheWood(f, trel, tree);
                 }

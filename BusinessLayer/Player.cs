@@ -14,6 +14,9 @@ namespace BusinessLayer {
             this.ForestReaper = fc;
         }
 
+        public Player() {
+        }
+
         public int ForestReaper { get; set; }
 
         public async Task<bool> LetPlayerStart(int games, int trees, int monkeys) {
